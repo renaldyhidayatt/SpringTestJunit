@@ -1,0 +1,180 @@
+_type: export
+__export_format: 4
+__export_date: 2022-10-14T18:30:26.835Z
+__export_source: insomnia.desktop.app:v2022.5.1
+resources:
+  - _id: req_7f0b0a206cc2433d9f64368d2090b10a
+    parentId: fld_f8de4b6256324305bd544416f5afe687
+    modified: 1665772165773
+    created: 1665772152632
+    url: localhost:8080/api/v1/properties/1
+    name: Delete
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1665772152632
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f8de4b6256324305bd544416f5afe687
+    parentId: wrk_f4e70ab815be440ebe72bf34fbd47bbc
+    modified: 1665771423572
+    created: 1665771423572
+    name: property
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1665771423572
+    _type: request_group
+  - _id: wrk_f4e70ab815be440ebe72bf34fbd47bbc
+    parentId: null
+    modified: 1665771418102
+    created: 1665771418102
+    name: properyManagement_Junit
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_213fe3726f30423c8752ace3bad69a88
+    parentId: fld_f8de4b6256324305bd544416f5afe687
+    modified: 1665772172746
+    created: 1665771628895
+    url: localhost:8080/api/v1/properties/1
+    name: Update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "MyExample1",
+        	"description": "MyDescriptio1n",
+        	"ownerName": "ownerName",
+        	"ownerEmail": "ownerEmail",
+        	"price": 10.00,
+        	"address": "Jakarta"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_81074fd2874b4a639aee3b0aec889bc5
+    authentication: {}
+    metaSortKey: -1665771628895
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f982cb5ac2a54188b8b1f81797dfc0e3
+    parentId: fld_f8de4b6256324305bd544416f5afe687
+    modified: 1665772181661
+    created: 1665771520142
+    url: localhost:8080/api/v1/properties
+    name: Create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "MyExample",
+        	"description": "MyDescription",
+        	"ownerName": "ownerName",
+        	"ownerEmail": "ownerEmail",
+        	"price": 10.00,
+        	"address": "Jakarta"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_75c12da3b7a847058d9481f0d8b0dce9
+    authentication: {}
+    metaSortKey: -1665771520142
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_186ee75696944f179dc285652072948b
+    parentId: fld_f8de4b6256324305bd544416f5afe687
+    modified: 1665772187038
+    created: 1665771465985
+    url: localhost:8080/api/v1/hello
+    name: Hello
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1665771465985
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7e413442ac68482f8bbd311e14e62718
+    parentId: fld_f8de4b6256324305bd544416f5afe687
+    modified: 1665771502928
+    created: 1665771424823
+    url: localhost:8080/api/v1/properties
+    name: GetAll
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1665771424823
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_91095015bc047d09992ed83714025db122e44265
+    parentId: wrk_f4e70ab815be440ebe72bf34fbd47bbc
+    modified: 1665771418130
+    created: 1665771418130
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1665771418130
+    _type: environment
+  - _id: jar_91095015bc047d09992ed83714025db122e44265
+    parentId: wrk_f4e70ab815be440ebe72bf34fbd47bbc
+    modified: 1665771418133
+    created: 1665771418133
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_11540c4e56f94108989dd79e40256db7
+    parentId: wrk_f4e70ab815be440ebe72bf34fbd47bbc
+    modified: 1665771418115
+    created: 1665771418115
+    fileName: properyManagement_Junit
+    contents: ""
+    contentType: yaml
+    _type: api_spec
